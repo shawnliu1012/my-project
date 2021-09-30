@@ -1,3 +1,9 @@
+/* 設定進度條 */
+:root {
+    --line-border-fill: #41aa5c;
+    --line-border-empty: #696969;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -10,10 +16,12 @@ h4 {
 /* navbar */
 
 .navbar-part {
-    background-color: #F5F5F5;
+    background-color: #fff;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 0 9rem;
 }
 
 .navbar-part a {
@@ -21,10 +29,42 @@ h4 {
     text-decoration: none;
     padding: 6px 20px;
     font-size: 12px;
-    background-color: #F5F5F5;
+    background-color: #fff;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
 }
 
+
+.logo-search-part {
+    display: flex;
+}
+
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+.logo:hover {
+    animation: change 2s ;
+}
+
+@keyframes change{
+    0%{ background: #000;}
+    20%{ background: #0f1bcc;}
+    60%{ background: #d87e2a;}
+    80%{ background: #177a30;}
+    100%{ background: #000;}
+}
+
+.logo-item {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
 .search-in-navbar {
     border-left: 1px solid #DCDCDC;
 }
@@ -43,17 +83,23 @@ h4 {
     opacity: 0.5;
 }
 
+.btn-sign {
+    color: rgb(116, 111, 111);
+    font-weight: bold;
+    border: none;
+    border-radius: 10%;
+    padding: 0.1rem 1rem;
+}
+
+.btn-sign:hover {
+    color:#000;
+}
 /* end of navbar */
 
 /* container */
-
-.container {
-    width: 75%;
-    margin: auto;
-}
-
 .select-search {
     margin: 20px 0px;
+    padding: 0 5.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,15 +111,20 @@ h4 {
 }
 
 .dropdown {
-    border: 1px solid #696969;
+    border: none;
     border-radius: 5px;
 }
 
 .project {
-    margin: 20px 0px 20px;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.project-container {
+    display: flex;
+    padding: 0 4.5rem;
 }
 
 .container-projects {
@@ -84,10 +135,12 @@ h4 {
     flex-direction: column;
 }
 
-.container-projects a {
+.photo:hover {
     text-decoration: none;
+}
+
+.title {
     color: #000;
-    font-weight: bold;
 }
 
 .container-projects img {
@@ -102,20 +155,48 @@ h4 {
     color: #696969;
 }
 
+a.cp-name {
+    color: #0050a2;
+}
+
+a.cp-name:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
 .container-projects p {
     color: #696969;
     font-size: 14px;
 }
 
 .container-project-footer {
-    border-top: 2px solid #1E90FF;
     color: #696969;
+}
+/* 設定進度條 */
+.cpf-line {
+    width: 100%;
+    height: 0.15rem;
+    background-color: var(--line-border-empty);
+    border-radius: 0.2rem;
+}
+/* 注意下fill設定 */
+.cpf-line {
+    /* width: 100%; */
+    height: 0.15rem;
+    background-color: var(--line-border-fill);
+    border-radius: 0.2rem;
+}
+
+
+.time-money-part {
     display: flex;
     justify-content: space-between;
 }
 
 .time {
     vertical-align: top;
+    line-height: 1.8rem;
+    font-size: 0.2rem;
 }
 
 .money {
