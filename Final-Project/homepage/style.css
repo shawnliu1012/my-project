@@ -1,3 +1,9 @@
+/* 設定進度條 */
+:root {
+    --line-border-fill: #41aa5c;
+    --line-border-empty: #696969;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -9,11 +15,17 @@ h4 {
 
 /* navbar */
 
+/* logo設計彩虹色變換 */
+
+/* 右側設計登入按鈕 */
+
 .navbar-part {
-    background-color: #F5F5F5;
+    background-color: #fff;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 0 9rem;
 }
 
 .navbar-part a {
@@ -21,10 +33,42 @@ h4 {
     text-decoration: none;
     padding: 6px 20px;
     font-size: 12px;
-    background-color: #F5F5F5;
+    background-color: #fff;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
 }
 
+.logo-search-part {
+    display: flex;
+}
+
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    border-radius: 50%;
+    
+}
+.logo:hover {
+    animation: change 2s ;
+}
+
+@keyframes change{
+    0%{ background: #000;}
+    20%{ background: #0f1bcc;}
+    60%{ background: #d87e2a;}
+    80%{ background: #177a30;}
+    100%{ background: #000;}
+}
+
+.logo-item {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
 .search-in-navbar {
     border-left: 1px solid #DCDCDC;
 }
@@ -41,6 +85,18 @@ h4 {
 
 .navbar-logo img:hover {
     opacity: 0.5;
+}
+
+.btn-sign {
+    color: rgb(116, 111, 111);
+    font-weight: bold;
+    border: none;
+    border-radius: 10%;
+    padding: 0.1rem 1rem;
+}
+
+.btn-sign:hover {
+    color:#000;
 }
 
 /* end of navbar */
@@ -125,6 +181,8 @@ h4 {
 
 .classification-choose:hover {
     font-weight: bold;
+    color: #00008B;
+    text-decoration: none;
 }
 
 /* end of classifications */
@@ -171,10 +229,12 @@ h4 {
     flex-direction: column;
 }
 
-.container-projects a {
+.photo:hover {
     text-decoration: none;
+}
+
+.title {
     color: #000;
-    font-weight: bold;
 }
 
 .container-projects img {
@@ -189,22 +249,48 @@ h4 {
     color: #696969;
 }
 
+a.cp-name {
+    color: #0050a2;
+}
+
+a.cp-name:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
 .container-projects p {
     color: #696969;
     font-size: 14px;
 }
 
 .container-project-footer {
-    border-top: 2px solid #1E90FF;
     color: #696969;
+}
+/* 設定進度條 */
+.cpf-line {
+    width: 100%;
+    height: 0.15rem;
+    background-color: var(--line-border-empty);
+    border-radius: 0.2rem;
+}
+/* 注意下fill設定 */
+.cpf-line {
+    /* width: 100%; */
+    height: 0.15rem;
+    background-color: var(--line-border-fill);
+    border-radius: 0.2rem;
+}
+
+
+.time-money-part {
     display: flex;
     justify-content: space-between;
 }
 
-/* 設定time money 使兩行對齊 */
-
 .time {
     vertical-align: top;
+    line-height: 1.8rem;
+    font-size: 0.2rem;
 }
 
 .money {
@@ -213,11 +299,13 @@ h4 {
 
 /* page btn */
 
-.project-page {
+/* 設定頁面按鈕 */
+
+/* .project-page {
     padding-top: 30px;
     display: flex;
     justify-content: center;
-}
+} */
 
 /* end of project */
 
@@ -240,6 +328,11 @@ footer {
     flex-direction: column;
     text-align: left;
     padding: 20px 0px;
+}
+
+.footer-content a:hover {
+    text-decoration: none;
+    color: #000000;
 }
 
 .footer-title {
@@ -290,7 +383,6 @@ footer {
     .container-projects {
         width: 100%;
     }
-
     .footer-part {
         width: 50%;
         display: flex;
@@ -298,4 +390,5 @@ footer {
         text-align: start;
     }
 }
+
 /* end of RWD */
