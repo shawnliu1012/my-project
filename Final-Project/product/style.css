@@ -1,0 +1,259 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h4 {
+    color: #696969;
+}
+
+/* navbar */
+
+.navbar-part {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 0 9rem;
+}
+
+.navbar-part a {
+    color: #000;
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 12px;
+    background-color: #fff;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.logo-search-part {
+    display: flex;
+}
+
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    animation: change 2s;
+}
+
+@keyframes change {
+    0% {
+        background: #000;
+    }
+    20% {
+        background: #0f1bcc;
+    }
+    60% {
+        background: #d87e2a;
+    }
+    80% {
+        background: #177a30;
+    }
+    100% {
+        background: #000;
+    }
+}
+
+.logo-item {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.search-in-navbar {
+    border-left: 1px solid #DCDCDC;
+}
+
+.search-in-navbar:hover {
+    color: #00008B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    width: 60px;
+}
+
+.navbar-logo img:hover {
+    opacity: 0.5;
+}
+
+.btn-sign {
+    color: rgb(116, 111, 111);
+    font-weight: bold;
+    border: none;
+    border-radius: 10%;
+    padding: 0.1rem 1rem;
+}
+
+.btn-sign:hover {
+    color: #000;
+}
+
+/* end of navbar */
+
+/* product */
+
+/* product-top */
+
+.product-top-page {
+    margin-top: 2rem;
+    padding: 0 9rem;
+    display: flex;
+}
+
+.product-img img {
+    border-radius: 1%;
+}
+
+.product-introduce {
+    margin-left: 2rem;
+}
+
+.product-classification a{
+    color: #696969;
+    font-weight: bold;
+}
+
+.product-classification a:hover {
+    text-decoration: none;
+}
+
+.pc-title h4 {
+    color: #000;
+}
+
+.pc-title:hover {
+    text-decoration: none;
+}
+
+.proposer {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.proposer a {
+    padding: 0 0.2rem;
+}
+
+.proposer a:not(:first-child) {
+    color: #696969;
+}
+
+.proposer a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.proposer-name {
+    color: #0f1bcc;
+    font-weight: bold;
+}
+
+/* 金額區 */
+
+.product-introduce-money {
+    display: flex;
+}
+
+.circle-out {
+    width: 4rem;
+    height: 4rem;
+    background-color: #DCDCDC;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* 需再加一個進度條 讓其可以轉動 */
+
+.circle-out:hover {
+    animation: percentage 1s;
+}
+
+@keyframes percentage {
+    0% {
+        background: #DCDCDC;
+    }
+    20% {
+        background: #0f1bcc;
+    }
+    60% {
+        background: #d87e2a;
+    }
+    80% {
+        background: #177a30;
+    }
+    100% {
+        background: #e50030;
+    }
+}
+
+.circle-in {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+}
+
+.percentage {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+}
+
+.p-i-amount {
+    margin-left: 1rem;
+}
+
+.order-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* footer */
+
+footer {
+    background-color: #F5F5F5;
+}
+
+.footer-part {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.footer-content a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+}
+
+.trademark {
+    margin-top: 20px;
+    color: #696969;
+}
+
+/* end of footer */
