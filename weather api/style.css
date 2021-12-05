@@ -1,7 +1,7 @@
-:root {
-    --primary: #a5a5a5;
+h1 {
+    color: #1354b6;
+}
+.card-part {
+    box-shadow: 3px 3px 5px #797878;
 }
 
-.bg-primary {
-    background-color: var(--primary);
-}
