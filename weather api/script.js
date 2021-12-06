@@ -20,5 +20,30 @@ fetch(
             let MaxT =
                 weatherData[index].weatherElement[4].time[2].parameter.parameterName;
             // console.log(currentValue);
+
+            let img;
+            if (Rain == 0) {
+                img = "svg/sun.svg";
+            } else if (Rain > 25 || Rain < 40) {
+                img = "svg/cloud-sun.svg";
+            } else if (Rain > 50) {
+                img = "svg/cloud.svg";
+            } else {
+                img = "svg/rain.svg";
+            }
+
+            let card = document.querySelector(".row");
+            card.innerHTML += `
+            <div class="card mb-2 text-center mx-auto" style="width: 18rem">
+        <img src="${img}" class="card-img-top mx-auto"  style="width:50% " alt="weather">
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">tmp: ${MinT}&#8451~${MaxT}&#8451</p>
+                <p class="card-text">降雨機率: ${Rain}%</p>
+                <p class="card-text">tmp: ${Wx}</p>
+        </div>
+        </div>
+    `;
         });
     });
+
