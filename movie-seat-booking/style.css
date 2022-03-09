@@ -7,7 +7,6 @@ body {
     background-image: url(./bc.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: #242333; */
     color: #fff;
     display: flex;
     flex-direction: column;
