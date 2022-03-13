@@ -21,6 +21,10 @@ body {
     margin: 20px 0;
 }
 
+.movie-container label {
+    color: #000;
+}
+
 .movie-container select {
     background: #fff;
     border-radius: 5px;
@@ -98,12 +102,12 @@ body {
 }
 
 .screen {
-    background: #fff;
+    background: rgb(153, 150, 150);
     height: 70px;
     width: 100%;
     margin: 15px 0;
     transform: rotateX(-45deg);
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 5px 10px rgba(245, 241, 241, 0.9);
 }
 
 p.text {
@@ -118,11 +122,11 @@ p.text span {
 }
 
 .bc-img {
-    background-color: rgb(79, 136, 243);
+    background-color: rgb(237, 239, 243);
     height: 70vh;
     width: 30vw;
     border-radius: 20px;
-    opacity: 0.2;
+    opacity: 0.5;
     position: absolute;
     z-index: -1;
 }
