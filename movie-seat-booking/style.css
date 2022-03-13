@@ -55,7 +55,7 @@ body {
 }
 
 .seat.occupied {
-    background-color: #fff;
+    background-color: rgb(255, 63, 63);
 }
 
 .seat:nth-of-type(2) {
@@ -77,7 +77,7 @@ body {
 }
 
 .showcase {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(51, 120, 177, 0.5);
     padding: 5px 10px;
     border-radius: 5px;
     color: #fff;
@@ -112,7 +112,7 @@ body {
 
 p.text {
     margin: 5px 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(51, 120, 177, 0.5);
     padding: 5px 10px;
     border-radius: 5px;
 }
